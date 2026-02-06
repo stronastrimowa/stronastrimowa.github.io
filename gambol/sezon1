@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>gambol :)</title>
+
+<style>
+/* ---------- BASE (works for all sizes) ---------- */
+
+:root {
+    --bg: #000000;
+    --panel: #1f0036;
+    --text: #00e1ff;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: var(--bg);
+    color: var(--text);
+    padding: clamp(12px, 3vw, 20px);
+    font-size: clamp(16px, 2.5vw, 16px); /* desktop stays same */
+}
+
+h1 {
+    text-align: center;
+    font-size: clamp(28px, 6vw, 32px);
+    margin-bottom: 24px;
+}
+
+h2 {
+    background-color: var(--panel);
+    padding: clamp(12px, 3vw, 14px);
+    margin-top: 40px;
+    border-radius: 10px;
+    font-size: clamp(20px, 4.5vw, 22px);
+}
+
+ol {
+    background-color: var(--panel);
+    margin: 0;
+    padding: clamp(16px, 3vw, 20px) clamp(16px, 3vw, 20px) clamp(16px, 3vw, 20px) clamp(40px, 6vw, 44px);
+    border-radius: 10px;
+}
+
+li {
+    margin: clamp(8px, 2vw, 6px) 0;
+    font-size: clamp(18px, 4vw, 16px);
+}
+
+/* ---------- LINKS = BIG TAP TARGETS ---------- */
+
+li a {
+    display: block;
+    color: var(--text);
+    text-decoration: none;
+    padding: clamp(10px, 3vw, 6px);
+    border-radius: 8px;
+}
+
+/* touch feedback */
+li a:active {
+    background-color: #2b004a;
+}
+
+/* hover for desktop */
+@media (hover: hover) {
+    li a:hover {
+        background-color: #2b004a;
+    }
+}
+
+/* ---------- DESKTOP FINE-TUNING ---------- */
+
+@media (min-width: 1024px) {
+    body {
+        max-width: 900px;
+        margin: 0 auto;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<h1>gambol :)</h1>
+
+<h2>SEZON 1</h2>
+<ol>
+<li><a href="https://vider.info/vid/+fe8xsm5">Odpowiedzialni</a></li>
+<li><a href="https://vider.info/vid/+fe8xsm1">DVD</a></li>
+<li><a href="https://vider.info/vid/+fe8x81s">Trzeci</a></li>
+<li><a href="https://vider.info/vid/+fe8x81e">Dług</a></li>
+<li><a href="https://vider.info/vid/+fe8x818">Koniec</a></li>
+<li><a href="https://vider.info/vid/+fe8x811">Sukienka</a></li>
+<li><a href="https://vider.info/vid/+fe8s5em">Zabawka</a></li>
+<li><a href="https://vider.info/vid/+fe8s5en">Łyżka</a></li>
+<li><a href="https://vider.info/vid/+fe8s5sv">Ciśnienie</a></li>
+<li><a href="https://vider.info/vid/+fe8s5ex">Obrazek</a></li>
+<li><a href="">Leniuchy X</a></li>
+<li><a href="">Duch X</a></li>
+<li><a href="">Tajemnica X</a></li>
+<li><a href="https://youtu.be/LYBWCiKGank">Żart</a></li>
+<li><a href="">Sztuki Walki X</a></li>
+<li><a href="">Pocałunek X</a></li>
+<li><a href="">Impreza X</a></li>
+<li><a href="">Zwrot gotówki X</a></li>
+<li><a href="">Robot X</a></li>
+<li><a href="">Piknik X</a></li>
+<li><a href="">Głupole X</a></li>
+<li><a href="">Tajemnica X</a></li>
+<li><a href="">Skarpeta X</a></li>
+<li><a href="">Geniusz X</a></li>
+<li><a href="">Duch X</a></li>
+<li><a href="">Wąsy X</a></li>
+<li><a href="">Randka X</a></li>
+<li><a href="">Klub X</a></li>
+<li><a href="">Różdżka X</a></li>
+<li><a href="https://vider.info/vid/+fe18nsm">Małpa</a></li>
+<li><a href="https://youtu.be/sW9Y5UY76Ak">Auto</a></li>
+<li><a href="https://youtu.be/LTVYsaBQUIk">Pech</a></li>
+<li><a href="">Mikrofalówka X</a></li>
+<li><a href="">Mąciwoda X</a></li>
+<li><a href="">Hełm X</a></li>
+<li><a href="">Walka X</a></li>
+</ol>
+
+<!-- the rest of your seasons can stay exactly the same -->
+</body>
+</html>
