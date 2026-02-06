@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>strona strimowa :)</title>
+
+<style>
+:root {
+    --bg: #000000;
+    --panel: #1f0036;
+    --panel-hover: #2b004a;
+    --text: #00e1ff;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: var(--bg);
+    color: var(--text);
+    padding: clamp(16px, 4vw, 24px);
+    text-align: center;
+}
+
+h1 {
+    font-size: clamp(28px, 6vw, 32px);
+    margin-bottom: 32px;
+}
+
+/* container for buttons */
+.main-menu {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 16px;
+    max-width: 420px;
+    margin: 0 auto;
+}
+
+/* season buttons */
+.season-btn {
+    display: block;
+    background-color: var(--panel);
+    color: var(--text);
+    text-decoration: none;
+    padding: clamp(18px, 4vw, 20px);
+    border-radius: 14px;
+    font-size: clamp(20px, 4.5vw, 22px);
+    font-weight: bold;
+}
+
+/* hover (desktop) */
+@media (hover: hover) {
+    .season-btn:hover {
+        background-color: var(--panel-hover);
+    }
+}
+
+/* tap feedback (mobile) */
+.season-btn:active {
+    background-color: var(--panel-hover);
+}
+
+/* desktop centering */
+@media (min-width: 1024px) {
+    body {
+        max-width: 900px;
+        margin: 0 auto;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<h1>filmy :)</h1>
+
+<div class="main-menu">
+    <a class="season-btn" href="https://vider.info/vid/+fnss8sx">Opętanie</a>
+    <a class="season-btn" href="https://www.cda.pl/video/26490094d1">Trainspotting</a>
+    <a class="season-btn" href="https://www.cda.pl/video/772128134">Hostel</a>
+    <a class="season-btn" href="filmy\film4.html">film 4</a>
+    <a class="season-btn" href="filmy\film5.html">film 5</a>
+    <a class="season-btn" href="filmy\film6.html">film 6</a>
+</div>
+
+</body>
+</html>
