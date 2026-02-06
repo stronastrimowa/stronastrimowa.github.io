@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>gambol :)</title>
+
+<style>
+/* ---------- BASE (works for all sizes) ---------- */
+
+:root {
+    --bg: #000000;
+    --panel: #1f0036;
+    --text: #00e1ff;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: var(--bg);
+    color: var(--text);
+    padding: clamp(12px, 3vw, 20px);
+    font-size: clamp(16px, 2.5vw, 16px); /* desktop stays same */
+}
+
+h1 {
+    text-align: center;
+    font-size: clamp(28px, 6vw, 32px);
+    margin-bottom: 24px;
+}
+
+h2 {
+    background-color: var(--panel);
+    padding: clamp(12px, 3vw, 14px);
+    margin-top: 40px;
+    border-radius: 10px;
+    font-size: clamp(20px, 4.5vw, 22px);
+}
+
+ol {
+    background-color: var(--panel);
+    margin: 0;
+    padding: clamp(16px, 3vw, 20px) clamp(16px, 3vw, 20px) clamp(16px, 3vw, 20px) clamp(40px, 6vw, 44px);
+    border-radius: 10px;
+}
+
+li {
+    margin: clamp(8px, 2vw, 6px) 0;
+    font-size: clamp(18px, 4vw, 16px);
+}
+
+/* ---------- LINKS = BIG TAP TARGETS ---------- */
+
+li a {
+    display: block;
+    color: var(--text);
+    text-decoration: none;
+    padding: clamp(10px, 3vw, 6px);
+    border-radius: 8px;
+}
+
+/* touch feedback */
+li a:active {
+    background-color: #2b004a;
+}
+
+/* hover for desktop */
+@media (hover: hover) {
+    li a:hover {
+        background-color: #2b004a;
+    }
+}
+
+/* ---------- DESKTOP FINE-TUNING ---------- */
+
+@media (min-width: 1024px) {
+    body {
+        max-width: 900px;
+        margin: 0 auto;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<h1>gambol :)</h1>
+
+<h2>SEZON 2</h2>
+<ol>
+<li><a href="https://youtu.be/-wrWeOmIKPs">Olbrzym</a></li>
+<li><a href="">Rycerze X</a></li>
+<li><a href="">Lodówka X</a></li>
+<li><a href="">Kwiatek X</a></li>
+<li><a href="">Banan X</a></li>
+<li><a href="https://youtu.be/Byt267Om2ao">Komórka</a></li>
+<li><a href="https://youtu.be/UB-IK8NBMQg">Praca</a></li>
+<li><a href="https://youtu.be/6iv9R3-MQrU">Pilot</a></li>
+<li><a href="https://youtu.be/_hMvPUpJpHc">Halloween</a></li>
+<li><a href="https://youtu.be/Ts9VwcLN1e4">Skarb</a></li>
+<li><a href="">Przeprosiny X</a></li>
+<li><a href="https://youtu.be/o4A9GVJPeOk">Słowa</a></li>
+<li><a href="">Czaszka X</a></li>
+<li><a href="">Zakład X</a></li>
+<li><a href="">Gwiazdka X</a></li>
+<li><a href="">Zegarek X</a></li>
+<li><a href="">The Flakers X</a></li>
+<li><a href="">Wielki zawód X</a></li>
+<li><a href="">Autorytet X</a></li>
+<li><a href="">Wirus X</a></li>
+<li><a href="https://youtu.be/jFaFPV60scY">Kucyk</a></li>
+<li><a href="https://youtu.be/-l4W14P6rfU">Bohater</a></li>
+<li><a href="">Sen X</a></li>
+<li><a href="">Następnego dnia X</a></li>
+<li><a href="https://youtu.be/-l4W14P6rfU&t=671">Zdjęcie</a></li>
+<li><a href="">Bransoleta X</a></li>
+<li><a href="">Burza X</a></li>
+<li><a href="">Nauczka X</a></li>
+<li><a href="">Gra X</a></li>
+<li><a href="">Granica X</a></li>
+<li><a href="">Głos X</a></li>
+<li><a href="">Obietnica X</a></li>
+<li><a href="">Zamek X</a></li>
+<li><a href="">Boombox X</a></li>
+<li><a href="https://youtu.be/C1Bv3R9CIxo">Taśma</a></li>
+<li><a href="">Swetry X</a></li>
+<li><a href="">Internet X</a></li>
+<li><a href="">Plan X</a></li>
+<li><a href="">Świat X</a></li>
+<li><a href="">Finał X</a></li>
+</ol>
+
+<!-- the rest of your seasons can stay exactly the same -->
+</body>
+</html>
