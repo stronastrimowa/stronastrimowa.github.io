@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>gambol :)</title>
+
+<style>
+/* ---------- BASE (works for all sizes) ---------- */
+
+:root {
+    --bg: #000000;
+    --panel: #1f0036;
+    --text: #00e1ff;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: var(--bg);
+    color: var(--text);
+    padding: clamp(12px, 3vw, 20px);
+    font-size: clamp(16px, 2.5vw, 16px); /* desktop stays same */
+}
+
+h1 {
+    text-align: center;
+    font-size: clamp(28px, 6vw, 32px);
+    margin-bottom: 24px;
+}
+
+h1 a {
+    color: inherit;
+    text-decoration: none;
+}
+
+h1 a:hover {
+    opacity: 0.85;
+    cursor: pointer;
+}
+
+h2 {
+    background-color: var(--panel);
+    padding: clamp(12px, 3vw, 14px);
+    margin-top: 40px;
+    border-radius: 10px;
+    font-size: clamp(20px, 4.5vw, 22px);
+}
+
+ol {
+    background-color: var(--panel);
+    margin: 0;
+    padding: clamp(16px, 3vw, 20px) clamp(16px, 3vw, 20px) clamp(16px, 3vw, 20px) clamp(40px, 6vw, 44px);
+    border-radius: 10px;
+}
+
+li {
+    margin: clamp(8px, 2vw, 6px) 0;
+    font-size: clamp(18px, 4vw, 16px);
+}
+
+.heart::after {
+    content: " ♥";
+    color: red;
+    font-size: 0.9em;
+    margin-left: 4px;
+}
+
+/* ---------- LINKS = BIG TAP TARGETS ---------- */
+
+li a {
+    display: block;
+    color: var(--text);
+    text-decoration: none;
+    padding: clamp(10px, 3vw, 6px);
+    border-radius: 8px;
+}
+
+/* touch feedback */
+li a:active {
+    background-color: #2b004a;
+}
+
+/* hover for desktop */
+@media (hover: hover) {
+    li a:hover {
+        background-color: #2b004a;
+    }
+}
+
+/* ---------- DESKTOP FINE-TUNING ---------- */
+
+@media (min-width: 1024px) {
+    body {
+        max-width: 900px;
+        margin: 0 auto;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<h1><a href="https://stronastrimowa.github.io/">gambol :)</a></h1>
+
+<h2>SEZON 5</h2>
+<ol>
+<li><a href="">Powtórka X</a></li>
+<li><a href="">Historie X</a></li>
+<li><a href="">Gostek X</a></li>
+<li><a href="">Nuda X</a></li>
+<li><a href="">Wizja X</a></li>
+<li><a href="">Wybór X</a></li>
+<li><a href="">Wi-fi X</a></li>
+<li><a href="">Przekręt X</a></li>
+<li><a href="">Test X</a></li>
+<li><a href="">Przesunięcie X</a></li>
+<li><a href="">Zasady X</a></li>
+<li><a href="">Sobowtóry X</a></li>
+<li><a href="">Kartofel X</a></li>
+<li><a href="https://youtu.be/r-zifbGyuKE">Zamieszanie</a></li>
+<li><a href="https://vider.info/vid/+fe8mc1v">Wolność</a></li>
+<li><a href="https://vider.info/vid/+fe8mccm">Waza</a></li>
+<li><a href="https://vider.info/vid/+fe8mc5x">Swaci</a></li>
+<li><a href="">Pudło X</a></li>
+<li><a href="">Konsola X</a></li>
+<li><a href="">Ollie X</a></li>
+<li><a href="">Łowca naiwniaków X</a></li>
+<li><a href="https://vider.info/vid/+fe8mc58">Kołowrót</a></li>
+<li><a href="https://vider.info/vid/+fe8mc5e">Gwiazdki</a></li>
+<li><a href="">Oceny X</a></li>
+<li><a href="https://vider.info/vid/+fe8mc5n">Dieta</a></li>
+<li><a href="">Były X</a></li>
+<li><a href="">Czarownik X</a></li>
+<li><a href="https://vider.info/vid/+fe8mc1c">Menu</a></li>
+<li><a href="https://vider.info/vid/+fe8mc51">Wujek</a></li>
+<li><a href="">Dziwadło X</a></li>
+<li><a href="">Skok X</a></li>
+<li><a href="https://vider.info/vid/+fe8mc15">Śpiewanie</a></li>
+<li><a href="https://vider.info/vid/+fe8mc5m">Najlepszy</a></li>
+<li><a href="">Najgorszy X</a></li>
+<li><a href="">Układ X</a></li>
+<li><a href="">Płatki X</a></li>
+<li><a href="">Kukiełki X</a></li>
+<li><a href="https://vider.info/vid/+fe8mc5s">Utrapienie</a></li>
+<li><a href="">Kolejka X</a></li>
+<li><a href="">Lista X</a></li>
+<li><a href="">Wiadomości X</a></li>
+</ol>
+
+<!-- the rest of your seasons can stay exactly the same -->
+</body>
+</html>

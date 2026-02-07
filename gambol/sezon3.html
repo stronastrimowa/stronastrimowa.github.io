@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>gambol :)</title>
+
+<style>
+/* ---------- BASE (works for all sizes) ---------- */
+
+:root {
+    --bg: #000000;
+    --panel: #1f0036;
+    --text: #00e1ff;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: var(--bg);
+    color: var(--text);
+    padding: clamp(12px, 3vw, 20px);
+    font-size: clamp(16px, 2.5vw, 16px); /* desktop stays same */
+}
+
+h1 {
+    text-align: center;
+    font-size: clamp(28px, 6vw, 32px);
+    margin-bottom: 24px;
+}
+
+h1 a {
+    color: inherit;
+    text-decoration: none;
+}
+
+h1 a:hover {
+    opacity: 0.85;
+    cursor: pointer;
+}
+
+h2 {
+    background-color: var(--panel);
+    padding: clamp(12px, 3vw, 14px);
+    margin-top: 40px;
+    border-radius: 10px;
+    font-size: clamp(20px, 4.5vw, 22px);
+}
+
+ol {
+    background-color: var(--panel);
+    margin: 0;
+    padding: clamp(16px, 3vw, 20px) clamp(16px, 3vw, 20px) clamp(16px, 3vw, 20px) clamp(40px, 6vw, 44px);
+    border-radius: 10px;
+}
+
+li {
+    margin: clamp(8px, 2vw, 6px) 0;
+    font-size: clamp(18px, 4vw, 16px);
+}
+
+.heart::after {
+    content: " ♥";
+    color: red;
+    font-size: 0.9em;
+    margin-left: 4px;
+}
+
+/* ---------- LINKS = BIG TAP TARGETS ---------- */
+
+li a {
+    display: block;
+    color: var(--text);
+    text-decoration: none;
+    padding: clamp(10px, 3vw, 6px);
+    border-radius: 8px;
+}
+
+/* touch feedback */
+li a:active {
+    background-color: #2b004a;
+}
+
+/* hover for desktop */
+@media (hover: hover) {
+    li a:hover {
+        background-color: #2b004a;
+    }
+}
+
+/* ---------- DESKTOP FINE-TUNING ---------- */
+
+@media (min-width: 1024px) {
+    body {
+        max-width: 900px;
+        margin: 0 auto;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<h1><a href="https://stronastrimowa.github.io/">gambol :)</a></h1>
+
+<h2>SEZON 3</h2>
+<ol>
+<li><a href="">Dzieciaki X</a></li>
+<li><a href="">Fanka X</a></li>
+<li><a href="">Trener X</a></li>
+<li><a href="">Radość X</a></li>
+<li><a href="">Szczeniaczek X</a></li>
+<li><a href="">Przepis X</a></li>
+<li><a href="">Imię X</a></li>
+<li><a href="">Tło X</a></li>
+<li><a href="">Marudy X</a></li>
+<li><a href="">Wakacje X</a></li>
+<li><a href="">Oszust X</a></li>
+<li><a href="">Otchłań X</a></li>
+<li><a href="">Szef X</a></li>
+<li><a href="">Kłamczuch X</a></li>
+<li><a href="">Prawo X</a></li>
+<li><a href="">Uczulenie X</a></li>
+<li><a href="">Matki X</a></li>
+<li><a href="">Hasło X</a></li>
+<li><a href="">Kuktatorzy X</a></li>
+<li><a href="">Skorupa X</a></li>
+<li><a href="">Ciężar X</a></li>
+<li><a href="">Bracia X</a></li>
+<li><a href="">Lustro X</a></li>
+<li><a href="">Mężczyzna X</a></li>
+<li><a href="https://youtu.be/paboHDpSdCk">Pizza</a></li>
+<li><a href="">Kłamstwo X</a></li>
+<li><a href="">Motyl X</a></li>
+<li><a href="">Pytanie X</a></li>
+<li><a href="">Święty X</a></li>
+<li><a href="">Przyjaciel X</a></li>
+<li><a href="">Wyrocznia X</a></li>
+<li><a href="">Bezpieczeństwo X</a></li>
+<li><a href="">Społeczeństwo X</a></li>
+<li><a href="">Spoilery X</a></li>
+<li><a href="">Odliczanie X</a></li>
+<li><a href="">Nikt X</a></li>
+<li><a href="">Depresja X</a></li>
+<li><a href="">Trójkąt X</a></li>
+<li><a href="">Pieniądze X</a></li>
+<li><a href="">Jajko X</a></li>
+</ol>
+
+<!-- the rest of your seasons can stay exactly the same -->
+</body>
+</html>
