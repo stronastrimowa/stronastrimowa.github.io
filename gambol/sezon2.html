@@ -33,6 +33,16 @@ h1 {
     margin-bottom: 24px;
 }
 
+h1 a {
+    color: inherit;
+    text-decoration: none;
+}
+
+h1 a:hover {
+    opacity: 0.85;
+    cursor: pointer;
+}
+
 h2 {
     background-color: var(--panel);
     padding: clamp(12px, 3vw, 14px);
@@ -51,6 +61,13 @@ ol {
 li {
     margin: clamp(8px, 2vw, 6px) 0;
     font-size: clamp(18px, 4vw, 16px);
+}
+
+.heart::after {
+    content: " ♥";
+    color: red;
+    font-size: 0.9em;
+    margin-left: 4px;
 }
 
 /* ---------- LINKS = BIG TAP TARGETS ---------- */
@@ -88,20 +105,20 @@ li a:active {
 
 <body>
 
-<h1>gambol :)</h1>
+<h1><a href="https://stronastrimowa.github.io/">gambol :)</a></h1>
 
 <h2>SEZON 2</h2>
 <ol>
 <li><a href="https://youtu.be/-wrWeOmIKPs">Olbrzym</a></li>
 <li><a href="">Rycerze X</a></li>
-<li><a href="">Lodówka X</a></li>
+<li><a href="https://youtu.be/dxGAqgaSfok">Lodówka</a></li>
 <li><a href="">Kwiatek X</a></li>
 <li><a href="">Banan X</a></li>
 <li><a href="https://youtu.be/Byt267Om2ao">Komórka</a></li>
 <li><a href="https://youtu.be/UB-IK8NBMQg">Praca</a></li>
 <li><a href="https://youtu.be/6iv9R3-MQrU">Pilot</a></li>
 <li><a href="https://youtu.be/_hMvPUpJpHc">Halloween</a></li>
-<li><a href="https://youtu.be/Ts9VwcLN1e4">Skarb</a></li>
+<li><a href="https://youtu.be/Ts9VwcLN1e4"><span class="heart">Skarb</span></a></li>
 <li><a href="">Przeprosiny X</a></li>
 <li><a href="https://youtu.be/o4A9GVJPeOk">Słowa</a></li>
 <li><a href="">Czaszka X</a></li>
