@@ -4,9 +4,9 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>gambol :)</title>
+<link rel="icon" href="/icon.png">
 
 <style>
-/* ---------- BASE (works for all sizes) ---------- */
 
 :root {
     --bg: #000000;
@@ -24,7 +24,7 @@ body {
     background-color: var(--bg);
     color: var(--text);
     padding: clamp(12px, 3vw, 20px);
-    font-size: clamp(16px, 2.5vw, 16px); /* desktop stays same */
+    font-size: clamp(16px, 2.5vw, 16px);
 }
 
 h1 {
@@ -54,7 +54,10 @@ h2 {
 ol {
     background-color: var(--panel);
     margin: 0;
-    padding: clamp(16px, 3vw, 20px) clamp(16px, 3vw, 20px) clamp(16px, 3vw, 20px) clamp(40px, 6vw, 44px);
+    padding: clamp(16px, 3vw, 20px)
+             clamp(16px, 3vw, 20px)
+             clamp(16px, 3vw, 20px)
+             clamp(40px, 6vw, 44px);
     border-radius: 10px;
 }
 
@@ -70,8 +73,6 @@ li {
     margin-left: 4px;
 }
 
-/* ---------- LINKS = BIG TAP TARGETS ---------- */
-
 li a {
     display: block;
     color: var(--text);
@@ -80,19 +81,26 @@ li a {
     border-radius: 8px;
 }
 
-/* touch feedback */
 li a:active {
     background-color: #2b004a;
 }
 
-/* hover for desktop */
 @media (hover: hover) {
     li a:hover {
         background-color: #2b004a;
     }
 }
 
-/* ---------- DESKTOP FINE-TUNING ---------- */
+li a[href=""] {
+    color: #777;
+    text-decoration: line-through;
+    pointer-events: none;
+    cursor: default;
+}
+
+li a[href=""]:hover {
+    background-color: transparent;
+}
 
 @media (min-width: 1024px) {
     body {
@@ -100,6 +108,7 @@ li a:active {
         margin: 0 auto;
     }
 }
+
 </style>
 </head>
 
