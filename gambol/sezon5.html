@@ -4,9 +4,9 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>gambol :)</title>
+<link rel="icon" href="/icon.png">
 
 <style>
-/* ---------- BASE (works for all sizes) ---------- */
 
 :root {
     --bg: #000000;
@@ -24,7 +24,7 @@ body {
     background-color: var(--bg);
     color: var(--text);
     padding: clamp(12px, 3vw, 20px);
-    font-size: clamp(16px, 2.5vw, 16px); /* desktop stays same */
+    font-size: clamp(16px, 2.5vw, 16px);
 }
 
 h1 {
@@ -54,7 +54,10 @@ h2 {
 ol {
     background-color: var(--panel);
     margin: 0;
-    padding: clamp(16px, 3vw, 20px) clamp(16px, 3vw, 20px) clamp(16px, 3vw, 20px) clamp(40px, 6vw, 44px);
+    padding: clamp(16px, 3vw, 20px)
+             clamp(16px, 3vw, 20px)
+             clamp(16px, 3vw, 20px)
+             clamp(40px, 6vw, 44px);
     border-radius: 10px;
 }
 
@@ -70,8 +73,6 @@ li {
     margin-left: 4px;
 }
 
-/* ---------- LINKS = BIG TAP TARGETS ---------- */
-
 li a {
     display: block;
     color: var(--text);
@@ -80,19 +81,26 @@ li a {
     border-radius: 8px;
 }
 
-/* touch feedback */
 li a:active {
     background-color: #2b004a;
 }
 
-/* hover for desktop */
 @media (hover: hover) {
     li a:hover {
         background-color: #2b004a;
     }
 }
 
-/* ---------- DESKTOP FINE-TUNING ---------- */
+li a[href=""] {
+    color: #777;
+    text-decoration: line-through;
+    pointer-events: none;
+    cursor: default;
+}
+
+li a[href=""]:hover {
+    background-color: transparent;
+}
 
 @media (min-width: 1024px) {
     body {
@@ -100,6 +108,7 @@ li a:active {
         margin: 0 auto;
     }
 }
+
 </style>
 </head>
 
@@ -109,12 +118,12 @@ li a:active {
 
 <h2>SEZON 5</h2>
 <ol>
-<li><a href="">Powtórka X</a></li>
+<li><a href="https://vider.pl/vid/+f8evmmn">Powtórka</a></li>
 <li><a href="https://vider.pl/vid/+f8e5cnv">Historie</a></li>
-<li><a href="">Gostek X</a></li>
-<li><a href="">Nuda X</a></li>
-<li><a href="">Wizja X</a></li>
-<li><a href="">Wybór X</a></li>
+<li><a href="https://vider.pl/vid/+f8ecvv5">Gostek</a></li>
+<li><a href="https://vider.pl/vid/+f8evmme">Nuda</a></li>
+<li><a href="https://vider.pl/vid/+f8ecvvc">Wizja</a></li>
+<li><a href="https://vider.pl/vid/+f8ecvvv">Wybór</a></li>
 <li><a href="https://vider.pl/vid/+f8e5cxm">Wi-fi</a></li>
 <li><a href="https://vider.pl/vid/+f8e5cn5">Test</a></li>
 <li><a href="https://vider.pl/vid/+f8e5cxc">Przesunięcie</a></li>
@@ -128,27 +137,27 @@ li a:active {
 <li><a href="https://vider.pl/vid/+f8e5cxv">Pudło</a></li>
 <li><a href="https://vider.pl/vid/+f8e5css">Konsola</a></li>
 <li><a href="https://vider.pl/vid/+f8e5cxn">Ollie</a></li>
-<li><a href="">Łowca naiwniaków X</a></li>
+<li><a href="https://vider.pl/vid/+f8evmmx">Łowca naiwniaków</a></li>
 <li><a href="https://vider.info/vid/+fe8mc58">Kołowrót</a></li>
 <li><a href="https://vider.info/vid/+fe8mc5e">Gwiazdki</a></li>
 <li><a href="https://vider.pl/vid/+f8e5cxx">Oceny</a></li>
 <li><a href="https://vider.info/vid/+fe8mc5n">Dieta</a></li>
-<li><a href="">Były X</a></li>
-<li><a href="">Czarownik X</a></li>
+<li><a href="https://vider.pl/vid/+f8evmm8">Były</a></li>
+<li><a href="https://vider.pl/vid/+f8ecvv1">Czarownik</a></li>
 <li><a href="https://vider.info/vid/+fe8mc1c">Menu</a></li>
 <li><a href="https://vider.info/vid/+fe8mc51">Wujek</a></li>
 <li><a href="https://vider.pl/vid/+f8e5cxe">Dziwadło</a></li>
-<li><a href="">Skok X</a></li>
+<li><a href="https://vider.pl/vid/+f8evmmv">Skok</a></li>
 <li><a href="https://vider.info/vid/+fe8mc15">Śpiewanie</a></li>
 <li><a href="https://vider.info/vid/+fe8mc5m">Najlepszy</a></li>
 <li><a href="https://vider.pl/vid/+f8e5cse">Najgorszy</a></li>
-<li><a href="">Układ X</a></li>
+<li><a href="https://vider.pl/vid/+f8evmns">Układ</a></li>
 <li><a href="https://vider.pl/vid/+f8e5cne">Płatki</a></li>
-<li><a href="">Kukiełki X</a></li>
+<li><a href="https://vider.pl/vid/+f8evmnx">Kukiełki</a></li>
 <li><a href="https://vider.info/vid/+fe8mc5s">Utrapienie</a></li>
-<li><a href="">Kolejka X</a></li>
+<li><a href="https://vider.pl/vid/+f8evmnn">Kolejka</a></li>
 <li><a href="https://vider.pl/vid/+f8e5cn1">Lista</a></li>
-<li><a href="">Wiadomości X</a></li>
+<li><a href="https://vider.pl/vid/+f8evmmc">Wiadomości</a></li>
 </ol>
 
 <!-- the rest of your seasons can stay exactly the same -->
