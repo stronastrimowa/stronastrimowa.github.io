@@ -3,7 +3,8 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>strona strimowa :)</title>
+<title>gambol :)</title>
+<link rel="icon" href="icon.png">
 
 <style>
 :root {
@@ -42,7 +43,6 @@ h1 a:hover {
     cursor: pointer;
 }
 
-/* container for buttons */
 .main-menu {
     display: grid;
     grid-template-columns: 1fr;
@@ -51,7 +51,6 @@ h1 a:hover {
     margin: 0 auto;
 }
 
-/* season buttons */
 .season-btn {
     display: block;
     background-color: var(--panel);
@@ -63,19 +62,16 @@ h1 a:hover {
     font-weight: bold;
 }
 
-/* hover (desktop) */
 @media (hover: hover) {
     .season-btn:hover {
         background-color: var(--panel-hover);
     }
 }
 
-/* tap feedback (mobile) */
 .season-btn:active {
     background-color: var(--panel-hover);
 }
 
-/* desktop centering */
 @media (min-width: 1024px) {
     body {
         max-width: 900px;
@@ -100,4 +96,3 @@ h1 a:hover {
 
 </body>
 </html>
-
