@@ -4,9 +4,9 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>gambol :)</title>
+<link rel="icon" href="/icon.png">
 
 <style>
-/* ---------- BASE (works for all sizes) ---------- */
 
 :root {
     --bg: #000000;
@@ -24,7 +24,7 @@ body {
     background-color: var(--bg);
     color: var(--text);
     padding: clamp(12px, 3vw, 20px);
-    font-size: clamp(16px, 2.5vw, 16px); /* desktop stays same */
+    font-size: clamp(16px, 2.5vw, 16px);
 }
 
 h1 {
@@ -54,7 +54,10 @@ h2 {
 ol {
     background-color: var(--panel);
     margin: 0;
-    padding: clamp(16px, 3vw, 20px) clamp(16px, 3vw, 20px) clamp(16px, 3vw, 20px) clamp(40px, 6vw, 44px);
+    padding: clamp(16px, 3vw, 20px)
+             clamp(16px, 3vw, 20px)
+             clamp(16px, 3vw, 20px)
+             clamp(40px, 6vw, 44px);
     border-radius: 10px;
 }
 
@@ -70,8 +73,6 @@ li {
     margin-left: 4px;
 }
 
-/* ---------- LINKS = BIG TAP TARGETS ---------- */
-
 li a {
     display: block;
     color: var(--text);
@@ -80,19 +81,26 @@ li a {
     border-radius: 8px;
 }
 
-/* touch feedback */
 li a:active {
     background-color: #2b004a;
 }
 
-/* hover for desktop */
 @media (hover: hover) {
     li a:hover {
         background-color: #2b004a;
     }
 }
 
-/* ---------- DESKTOP FINE-TUNING ---------- */
+li a[href=""] {
+    color: #777;
+    text-decoration: line-through;
+    pointer-events: none;
+    cursor: default;
+}
+
+li a[href=""]:hover {
+    background-color: transparent;
+}
 
 @media (min-width: 1024px) {
     body {
@@ -100,6 +108,7 @@ li a:active {
         margin: 0 auto;
     }
 }
+
 </style>
 </head>
 
@@ -110,10 +119,10 @@ li a:active {
 <h2>SEZON 2</h2>
 <ol>
 <li><a href="https://youtu.be/-wrWeOmIKPs">Olbrzym</a></li>
-<li><a href="">Rycerze X</a></li>
+<li><a href="">Rycerze</a></li>
 <li><a href="https://youtu.be/dxGAqgaSfok">Lodówka</a></li>
 <li><a href="https://vider.pl/vid/+f8e555v">Kwiatek</a></li>
-<li><a href="">Banan X</a></li>
+<li><a href="https://vider.pl/vid/+f8evmn1"><span class="heart">Banan</span></a></li>
 <li><a href="https://youtu.be/Byt267Om2ao">Komórka</a></li>
 <li><a href="https://youtu.be/UB-IK8NBMQg">Praca</a></li>
 <li><a href="https://youtu.be/6iv9R3-MQrU">Pilot</a></li>
@@ -122,8 +131,8 @@ li a:active {
 <li><a href="https://vider.pl/vid/+f8e55cs">Przeprosiny</a></li>
 <li><a href="https://youtu.be/o4A9GVJPeOk">Słowa</a></li>
 <li><a href="https://vider.pl/vid/+f8e555x">Czaszka</a></li>
-<li><a href="">Zakład X</a></li>
-<li><a href="">Gwiazdka X</a></li>
+<li><a href="">Zakład</a></li>
+<li><a href="">Gwiazdka</a></li>
 <li><a href="https://vider.pl/vid/+f8e55c1">Zegarek</a></li>
 <li><a href="https://vider.pl/vid/+f8e55cm">Ciemniak</a></li>
 <li><a href="https://vider.pl/vid/+f8e555s">Wielki zawód</a></li>
@@ -136,7 +145,7 @@ li a:active {
 <li><a href="https://youtu.be/-l4W14P6rfU&t=671">Zdjęcie</a></li>
 <li><a href="https://vider.pl/vid/+f8e5cc5">Bransoleta</a></li>
 <li><a href="https://vider.pl/vid/+f8e5c8e">Burza</a></li>
-<li><a href="">Nauczka X</a></li>
+<li><a href="">Nauczka</a></li>
 <li><a href="https://vider.pl/vid/+f8e5cc8">Gra</a></li>
 <li><a href="https://vider.pl/vid/+f8e55c8">Granica</a></li>
 <li><a href="https://vider.pl/vid/+f8e5cc1">Głos</a></li>
@@ -151,6 +160,5 @@ li a:active {
 <li><a href="https://vider.pl/vid/+f8e5c85">Finał</a></li>
 </ol>
 
-<!-- the rest of your seasons can stay exactly the same -->
 </body>
 </html>
