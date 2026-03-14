@@ -86,6 +86,7 @@ h1 a:hover {
 <h1><a href="https://stronastrimowa.github.io/">gambol :)</a></h1>
 
 <div class="main-menu">
+    <a class="season-btn" onclick="goRandomEpisode()">Niespodzianka</a>
     <a class="season-btn" href="gambol\sezon1.html">Sezon 1</a>
     <a class="season-btn" href="gambol\sezon2.html">Sezon 2</a>
     <a class="season-btn" href="gambol\sezon3.html">Sezon 3</a>
@@ -93,6 +94,59 @@ h1 a:hover {
     <a class="season-btn" href="gambol\sezon5.html">Sezon 5</a>
     <a class="season-btn" href="gambol\sezon6.html">Sezon 6</a>
 </div>
+
+<script>
+async function goRandomEpisode() {
+
+const seasonPages = [
+"gambol/sezon1.html",
+"gambol/sezon2.html",
+"gambol/sezon3.html",
+"gambol/sezon4.html",
+"gambol/sezon5.html",
+"gambol/sezon6.html"
+];
+
+// pick random season
+const randomSeason = seasonPages[Math.floor(Math.random() * seasonPages.length)];
+
+try {
+
+const response = await fetch(randomSeason);
+const html = await response.text();
+
+// parse the HTML
+const parser = new DOMParser();
+const doc = parser.parseFromString(html, "text/html");
+
+// get all links
+const links = [...doc.querySelectorAll("a")];
+
+// keep only episode links
+const episodes = links
+.map(a => a.href)
+.filter(href =>
+    href.includes("vider.info") ||
+    href.includes("youtu")
+);
+
+if (episodes.length === 0) {
+    alert("Nie znaleziono odcinków.");
+    return;
+}
+
+// choose random episode
+const randomEpisode = episodes[Math.floor(Math.random() * episodes.length)];
+
+window.location.href = randomEpisode;
+
+} catch (err) {
+console.error(err);
+alert("Błąd podczas losowania odcinka.");
+}
+
+}
+</script>
 
 </body>
 </html>
